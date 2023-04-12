@@ -4,13 +4,13 @@ Menu(){
 	echo -e "1. install_ansible\n2. install_wordpress\n3. install_zabbix"
 	read choice
 }
-function install_ansible.yml(){
+function (){
 	playbook="ansible.sh"
 }
-function poweroff.yml(){
+function (){
 	playbook="wordpress.sh"
 }
-function remove_users.yml(){
+function (){
 	playbook="myzabbix.sh"
 }
 
@@ -22,7 +22,7 @@ case $choice in
 	2) wordpress.sh; ;;
 	3) myzabbix.sh; ;;
 esac
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 read -p "Enter class: " class
 echo $playbook
